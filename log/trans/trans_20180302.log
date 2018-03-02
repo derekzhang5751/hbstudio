@@ -1,0 +1,173 @@
+[2018-03-02 00:19:02]Translate Response: {
+  "error": {
+    "code": 400,
+    "message": "Missing required field target",
+    "errors": [
+      {
+        "message": "Missing required field target",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+[2018-03-02 00:21:28]Translate Post Data: 
+[2018-03-02 00:21:28]Translate Response: {
+  "error": {
+    "code": 400,
+    "message": "Missing required field target",
+    "errors": [
+      {
+        "message": "Missing required field target",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+[2018-03-02 00:26:58]Params: ��eenzhAIzaSyAR0s0A-hBNYrLruYQLeR-TBcSLgNmrMYM
+[2018-03-02 00:26:58]Translate Post Data: 
+[2018-03-02 00:26:58]Translate Response: {
+  "error": {
+    "code": 400,
+    "message": "Missing required field target",
+    "errors": [
+      {
+        "message": "Missing required field target",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+[2018-03-02 00:35:34]Params: helloenzhAIzaSyAR0s0A-hBNYrLruYQLeR-TBcSLgNmrMYM
+[2018-03-02 00:35:34]Translate Post Data: {"q":"hello","source":"en","target":"zh","format":"text","model":"nmt"}
+[2018-03-02 00:35:34]Translate Response: {
+  "data": {
+    "translations": [
+      {
+        "translatedText": "你好",
+        "model": "nmt"
+      }
+    ]
+  }
+}
+
+[2018-03-02 00:37:57]Params: helloenzhAIzaSyAR0s0A-hBNYrLruYQLeR-TBcSLgNmrMYM
+[2018-03-02 00:37:57]Translate Post Data: {"q":"hello","source":"en","target":"zh","format":"text","model":"nmt"}
+[2018-03-02 00:37:57]Translate Response: {
+  "data": {
+    "translations": [
+      {
+        "translatedText": "你好",
+        "model": "nmt"
+      }
+    ]
+  }
+}
+
+[2018-03-02 00:44:07]Translate Post Data: {"q":"hello","source":"en","target":"zh","format":"text","model":"nmt"}
+[2018-03-02 00:44:07]Translate Response: {
+  "data": {
+    "translations": [
+      {
+        "translatedText": "你好",
+        "model": "nmt"
+      }
+    ]
+  }
+}
+
+[2018-03-02 00:44:45]Translate Post Data: {"q":"fund","source":"en","target":"zh","format":"text","model":"nmt"}
+[2018-03-02 00:44:45]Translate Response: {
+  "data": {
+    "translations": [
+      {
+        "translatedText": "基金",
+        "model": "nmt"
+      }
+    ]
+  }
+}
+
+[2018-03-02 00:45:43]Translate Post Data: {"q":"\u7f8e\u4e3d","source":"zh","target":"en","format":"text","model":"nmt"}
+[2018-03-02 00:45:43]Translate Response: {
+  "data": {
+    "translations": [
+      {
+        "translatedText": "beautiful",
+        "model": "nmt"
+      }
+    ]
+  }
+}
+
+[2018-03-02 00:46:14]Translate Post Data: {"q":"\u7f8e\u4e3d","source":"en","target":"zh","format":"text","model":"nmt"}
+[2018-03-02 00:46:14]Translate Response: {
+  "data": {
+    "translations": [
+      {
+        "translatedText": "美丽",
+        "model": "base"
+      }
+    ]
+  }
+}
+
+[2018-03-02 01:07:38]Translate Post Data: {"q":"google","source":"en","target":"zh","format":"text","model":"nmt"}
+[2018-03-02 01:07:38]Translate Response: {
+  "data": {
+    "translations": [
+      {
+        "translatedText": "谷歌",
+        "model": "nmt"
+      }
+    ]
+  }
+}
+
+[2018-03-02 01:08:38]Translate Post Data: {"q":"google","source":"en","target":"zh","format":"text","model":"nmt"}
+[2018-03-02 01:08:38]Translate Response: {
+  "data": {
+    "translations": [
+      {
+        "translatedText": "谷歌",
+        "model": "nmt"
+      }
+    ]
+  }
+}
+
+[2018-03-02 01:08:57]Translate Post Data: {"q":"\u6e05\u771f","source":"zh","target":"en","format":"text","model":"nmt"}
+[2018-03-02 01:08:57]Translate Response: {
+  "data": {
+    "translations": [
+      {
+        "translatedText": "Muslim",
+        "model": "nmt"
+      }
+    ]
+  }
+}
+
+[2018-03-02 19:03:21]Debug ddddddddddddddd
+[2018-03-02 19:03:21]Debug 111
+[2018-03-02 19:03:21]Debug 222
+[2018-03-02 19:03:21]Debug 333
+[2018-03-02 19:03:21]Debug true
+[2018-03-02 19:04:28]Debug ddddddddddddddd
+[2018-03-02 19:04:28]Debug 111
+[2018-03-02 19:04:28]Debug 222
+[2018-03-02 19:04:28]Debug 333
+[2018-03-02 19:04:28]Debug false
+[2018-03-02 19:05:11]Debug ddddddddddddddd
+[2018-03-02 19:05:11]Debug 111
+[2018-03-02 19:05:11]Debug 222
+[2018-03-02 19:05:11]Debug 333
+[2018-03-02 19:05:11]Debug true

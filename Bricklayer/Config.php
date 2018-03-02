@@ -43,7 +43,7 @@ $gConfig = [
     ],
     'log' => [
         'logging' => true,
-        //'basepath' => '/Users/derek/WebProjects/HBStudio/hbstudio/log/',
-        'basepath' => '/usr/local/apache2/htdocs/log/'
+        'basepath' => '/Users/derek/WebProjects/HBStudio/hbstudio/log/',
+        //'basepath' => '/usr/local/apache2/htdocs/log/'
     ]
 ];
