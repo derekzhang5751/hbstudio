@@ -13,16 +13,16 @@ abstract class RequestLifeCircle
 {
     protected $db = null;
     protected $log = null;
-
+    
     public function run() {
         if (isset($GLOBALS['db'])) {
             $this->db = $GLOBALS['db'];
         }
-
+        
         if (isset($GLOBALS['log'])) {
             $this->log = $GLOBALS['log'];
         }
-
+        
         if ($this->prepareRequestParams() === true) {
             if ($this->process() === true) {
                 switch ($GLOBALS['DeviceType']) {
@@ -43,22 +43,26 @@ abstract class RequestLifeCircle
             exit('Invalid Request !!');
         }
     }
-
+    
     abstract protected function prepareRequestParams();
     abstract protected function process();
     abstract protected function responseWeb();
     abstract protected function responseHybrid();
     abstract protected function responseMobile();
-
-    protected function jsonResponse($result = 'success', $msg='', $data=[]) {
+    
+    protected function jsonResponse($result) {
         $data_arr = array(
-            'result'     => $result,
-            'msg'        => $msg,
-            'SESSION_ID' => SESSION_ID,
-            'data'       => $data);
-
+            'success'    => $result['success'],
+            'code'       => $result['code'],
+            'msg'        => $result['msg'],
+            'data'       => $result['data']
+        );
+        if (SESSION_ID) {
+            $data_arr['SESSION_ID'] = SESSION_ID;
+        }
+        
         $json = json_encode($data_arr);
         exit($json);
     }
-
+    
 }

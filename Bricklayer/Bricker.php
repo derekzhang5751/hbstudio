@@ -99,6 +99,8 @@ if ( isset($GLOBALS['LifeCfg']['SESSION_CLASS']) ) {
     
     define('SESSION_ID',    $MySession->getSessionId());
     //$GLOBALS['log']->log('bricker', 'Current session id = '.SESSION_ID);
+} else {
+    define('SESSION_ID', '');
 }
 
 /*

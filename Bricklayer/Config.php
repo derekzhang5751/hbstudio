@@ -13,17 +13,17 @@ $gConfig = [
     'db' => [
         // required
         'database_type' => 'mysql',
-        'database_name' => 'estore',
+        'database_name' => 'hbstudio',
         'server' => 'localhost',
-        'username' => 'estore',
-        'password' => 'Zhanghb007!',
+        'username' => 'hbstudio',
+        'password' => '1234Qwer!@',
 
         // optional
         'charset' => 'utf8',
         'port' => 3306,
 
         // [optional] Table prefix
-        'prefix' => 'ecs_',
+        'prefix' => 'hb_',
 
         // [optional] Enable logging (Logging is disabled by default for better performance)
         'logging' => false,
@@ -43,6 +43,6 @@ $gConfig = [
     ],
     'log' => [
         'logging' => true,
-        'basepath' => '/Users/derek/WebProjects/jiajiajia/jiaserver/log/'
+        'basepath' => '/Users/derek/WebProjects/HBStudio/hbstudio/log/'
     ]
 ];
