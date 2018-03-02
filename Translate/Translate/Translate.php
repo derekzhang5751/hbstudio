@@ -103,7 +103,7 @@ class Translate extends HbBase {
         }
         
         // 2, no translation
-        if ($this->text == $translated) {
+        if ($this->text == strtolower($translated)) {
             return false;
         }
         
@@ -146,7 +146,7 @@ class Translate extends HbBase {
         }
         
         // 2, no translation
-        if ($this->text == $translated) {
+        if ($this->text == strtolower($translated)) {
             return false;
         }
         
