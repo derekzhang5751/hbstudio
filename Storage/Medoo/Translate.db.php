@@ -93,3 +93,18 @@ function db_history_update($userId, $en, $zh)
         return false;
     }
 }
+
+function db_history_list($userId, $maxSize)
+{
+    $historyList = $GLOBALS['db']->select('history',
+        [
+            'en', 'zh', 'count'
+        ],
+        [
+            'user_id' => $userId,
+            'ORDER' => ['count' => 'DESC', 'his_id' => 'DESC'],
+            'LIMIT' => $maxSize
+        ]
+    );
+    return $historyList;
+}

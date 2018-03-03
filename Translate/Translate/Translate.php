@@ -231,7 +231,7 @@ class Translate extends HbBase {
         $len = strlen($source);
         for ($i=0; $i<$len; $i++) {
             $asc = ord( $source[$i] );
-            if ($asc < 97 || $asc > 122) {
+            if ( ($asc < 97 || $asc > 122) && $asc != 32 ) {
                 return false;
             }
         }
