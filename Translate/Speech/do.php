@@ -1,14 +1,14 @@
 <?php
 /**
  * User: Derek
- * Date: 2018-02-28
- * Time: 12:41 PM
+ * Date: 2018-03-03
+ * Time: 12:47 PM
  */
 define('USE_BRICKER', true);
 
 $LifeCfg = array(
     'MODULE_NAME'    => 'Translate',
-    'REQUEST_NAME'   => 'History',
+    'REQUEST_NAME'   => 'Speech',
     'LANG'           => 'zh_cn',
     //'SESSION_CLASS'  => 'JiaSession',
     'DB_TYPE'        => 'Medoo',

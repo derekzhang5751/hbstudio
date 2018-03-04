@@ -56,6 +56,13 @@ class Translate extends HbBase {
         $translated = $this->localTranslate($this->text);
         if ( $translated ) {
             $this->return['data']['result'] = $translated;
+            if ($this->langTo == 'en') {
+                $this->return['data']['en'] = $translated;
+                $this->return['data']['zh'] = $this->text;
+            } else {
+                $this->return['data']['en'] = $this->text;
+                $this->return['data']['zh'] = $translated;
+            }
             $this->return['success'] = true;
             $this->return['msg'] = '';
             $this->saveToUserHistory($translated);
@@ -66,6 +73,13 @@ class Translate extends HbBase {
         $translated = $this->googleTranslate($this->text, $this->langFrom, $this->langTo, $authKey);
         if ( $translated ) {
             $this->return['data']['result'] = $translated;
+            if ($this->langTo == 'en') {
+                $this->return['data']['en'] = $translated;
+                $this->return['data']['zh'] = $this->text;
+            } else {
+                $this->return['data']['en'] = $this->text;
+                $this->return['data']['zh'] = $translated;
+            }
             $this->return['success'] = true;
             $this->return['msg'] = '';
             

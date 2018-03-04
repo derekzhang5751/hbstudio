@@ -45,5 +45,10 @@ $gConfig = [
         'logging' => true,
         'basepath' => '/Users/derek/WebProjects/HBStudio/hbstudio/log/',
         //'basepath' => '/usr/local/apache2/htdocs/log/'
+    ],
+    'upload' => [
+        'uploadpath' => '/Users/derek/WebProjects/HBStudio/hbstudio/upload/',
+        //'uploadpath' => '/usr/local/apache2/htdocs/upload/',
+        'maxsize' => 1048576
     ]
 ];
